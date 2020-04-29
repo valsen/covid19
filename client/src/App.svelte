@@ -32,7 +32,7 @@
 			searchTerms: userInputToArray(),
 			iso: selectedCountry.iso
 		};
-	    const response = await fetch('./trends', {
+	    const response = await fetch('./api/trends', {
 	    	method: 'POST',
 			headers: {
 				  'Content-Type': 'application/json'
