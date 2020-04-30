@@ -69,7 +69,7 @@
 	}
 
 	async function getCovidCasesUSA() {
-		const response = await fetch('https://covidtracking.com/api/us/daily');
+		const response = await fetch('https://covidtracking.com/api/v1/us/daily.json');
 	    const data = await response.json();
 	    casesUsa = parseCasesUsa(data);
 	}
